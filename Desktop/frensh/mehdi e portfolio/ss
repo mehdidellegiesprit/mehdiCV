@@ -1,0 +1,48 @@
+<div *ngIf="ok && o['type']  == 'PHYSIQUE' ">
+<mat-card>
+  <h4>Profile Information</h4>
+  <div class="pt-3">
+    <div class="proflie-field mb-3">
+      <label>Nom :</label>
+      <span> {{ o['nom'] }}</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>Prenom :</label>
+      <span>{{ o['prenom'] }}</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>Gender:</label>
+      <span> {{ o['gender'] }}</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>Date of birth:</label>
+      <span>Jan,06,1979</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>Mobile Number:</label>
+      <span>{{ o['numtel'] }}</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>location:</label>
+      <span>{{ o['region'] }}</span>
+    </div>
+    <div class="proflie-field mb-3">
+      <label>location:</label>
+      <span>{{ o['date'] }}</span>
+    </div>
+
+
+    <div class="proflie-field mb-3">
+      <label>E-mail id:</label>
+      <span>{{ o['email'] }}</span>
+    </div>
+
+    <div class="proflie-field mb-3">
+      <label>Image :</label>
+      <span>{{ o['image'] }}</span>
+    </div>
+
+    <button mat-raised-button color="accent" [routerLink]="['edit']" [queryParams]="{type:'info'}">Edit</button>
+  </div>
+</mat-card>
+</div>
